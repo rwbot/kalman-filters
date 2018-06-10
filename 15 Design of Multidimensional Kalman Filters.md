@@ -77,7 +77,7 @@ $$\large x = x' + Ky$$
 
 These equations may look complicated and intimidating, but they do nothing more than calculate an average factor. Let’s work through a quick example to gain a better understanding of this.
 
-[s![](https://preview.ibb.co/cGOBtT/capture_screen_2.png)](https://youtu.be/K-FobmdRMtI)
+[![](https://preview.ibb.co/cGOBtT/capture_screen_2.png)](https://youtu.be/K-FobmdRMtI)
 
 The last step in the Kalman Filter is to update the new state’s covariance using the Kalman Gain.
 
@@ -148,7 +148,7 @@ for (int n = 0; n < sizeof(measurements) / sizeof(measurements[0]); n++) {
 // Compute x and P
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzM0Mzk1NjUsLTE0OTQ3MTc1MTIsMj
-A5MTczNTAyNywtMjE5OTUxODAsLTE0MjEyODIwNzAsNzI4NzM4
-NTM4XX0=
+eyJoaXN0b3J5IjpbMTExNDk5NDY5MCwtMTQ5NDcxNzUxMiwyMD
+kxNzM1MDI3LC0yMTk5NTE4MCwtMTQyMTI4MjA3MCw3Mjg3Mzg1
+MzhdfQ==
 -->
