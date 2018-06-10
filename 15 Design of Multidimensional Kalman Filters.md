@@ -115,8 +115,8 @@ $$\large P = (I - KH)P'$$
 | y      	| Measurement Residual          		|  $\large y = z - Hx'$       	|
 | R      	| Measurement Noise             		|         	|
 | S      	| State Prediction + Meas Noise 	| $\large S = HP'H^T + R$        	|
-| P      	| Kalman Gain                   				| $\large K = P'H^TS^{-1}$        	|
-
+| K      	| Kalman Gain                   				| $\large K = P'H^TS^{-1}$        	|
+| Pnew      	| Posterior Covariance          		| $\large P' = FPF^T + Q$         	|
 
 The Kalman Filter can successfully recover from inaccurate initial estimates, but it is very important to estimate the noise parameters as accurately as possible - as they are used to determine which of the estimate or the measurement to believe more.
 
@@ -200,7 +200,7 @@ int main()
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1OTY0NzIwLDE2Mzc4MzMxMTgsLTE3NT
+eyJoaXN0b3J5IjpbOTUwNjI4MTA2LDE2Mzc4MzMxMTgsLTE3NT
 E0ODQ2NjMsNjA4NTE0ODQ4LC0xODA0NDU2NzMsLTE4ODk5MTY2
 OTMsLTEyNDAwMTg0NTMsLTIxMzA3Nzc5MTgsLTE0OTQ3MTc1MT
 IsMjA5MTczNTAyNywtMjE5OTUxODAsLTE0MjEyODIwNzAsNzI4
