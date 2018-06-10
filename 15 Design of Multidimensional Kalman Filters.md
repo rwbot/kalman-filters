@@ -69,7 +69,7 @@ These equations need not be memorized, instead they can be referred to in text o
 
 ## Kalman Gain
 
-Next, we calculate the Kalman Gain, $K$. As you will see in the next equation, the Kalman Gain determines how much weight should be placed on the state prediction, and how much on the measurement update. It is an averaging factor that changes depending on the uncertainty of the state prediction and measurement update.
+Next, we calculate the Kalman Gain, $K$. As you will see in the next equation, the Kalman Gain **determines how much weight should be placed on the state prediction, and how much on the measurement update.** It is an averaging factor that changes depending on the uncertainty of the state prediction and measurement update.
 
 $$\large K = P'H^TS^{-1}$$
 
@@ -148,7 +148,7 @@ for (int n = 0; n < sizeof(measurements) / sizeof(measurements[0]); n++) {
 // Compute x and P
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNDk5NDY5MCwtMTQ5NDcxNzUxMiwyMD
-kxNzM1MDI3LC0yMTk5NTE4MCwtMTQyMTI4MjA3MCw3Mjg3Mzg1
-MzhdfQ==
+eyJoaXN0b3J5IjpbLTIxMzA3Nzc5MTgsLTE0OTQ3MTc1MTIsMj
+A5MTczNTAyNywtMjE5OTUxODAsLTE0MjEyODIwNzAsNzI4NzM4
+NTM4XX0=
 -->
