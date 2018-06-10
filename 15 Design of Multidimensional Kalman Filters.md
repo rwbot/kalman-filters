@@ -7,13 +7,13 @@ To implement a two dimensional Kalman Filter, you will need to apply several lin
 
 ## State Transition
 
-We know that the update formula below represents the relationship between the robot’s position,  $x$, and velocity,  $\dot{x}$. We can also assume that the robot’s velocity is not changing, as we have no information to support any other conclusion.
+We know that the update formula below represents the relationship between the robot’s position,  $\large x$, and velocity,  $\large \dot{x}$. We can also assume that the robot’s velocity is not changing, as we have no information to support any other conclusion.
 
 $$\large x' = x + \Delta t \dot{x}$$
 
 $$\large \dot{x}' = \dot{x}$$
 
-Let’s see how these two equations would look if they were re-written as a linear algebra equation. On the left, is the posterior state (denoted with the prime symbol,  $'\space$), and on the right are the state transition function and the prior state. This equation shows how the state changes over the time period,  $\Delta t$. Note that we are working with the means here; the covariance matrix will appear later.
+Let’s see how these two equations would look if they were re-written as a linear algebra equation. On the left, is the posterior state (denoted with the prime symbol,  $\large '\space$), and on the right are the state transition function and the prior state. This equation shows how the state changes over the time period,  $\large \Delta t$. Note that we are working with the means here; the covariance matrix will appear later.
 
 $$\large \begin{bmatrix} x \\ \dot{x} \end{bmatrix}' = \begin{bmatrix} 1 & \Delta{t} \\ 0 & 1 \end{bmatrix} \begin{bmatrix} x \\ \dot{x} \end{bmatrix}$$
 
@@ -142,5 +142,5 @@ for (int n = 0; n < sizeof(measurements) / sizeof(measurements[0]); n++) {
 // Compute x and P
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI4NzM4NTM4XX0=
+eyJoaXN0b3J5IjpbLTE0MjEyODIwNzAsNzI4NzM4NTM4XX0=
 -->
