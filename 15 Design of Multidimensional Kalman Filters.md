@@ -118,6 +118,8 @@ $$\large P = (I - KH)P'$$
 | K      					| Kalman Gain                   				| $\large K = P'H^TS^{-1}$        	|
 | $P_{new}$      	| New State Covariance Updated  with Kalman Gain| $\large P = (I - KH)P'$         	|
 
+
+
 The Kalman Filter can successfully recover from inaccurate initial estimates, but it is very important to estimate the noise parameters as accurately as possible - as they are used to determine which of the estimate or the measurement to believe more.
 
 Now it’s your chance to code the multi-dimensional Kalman Filter in C++. The code below uses the C++  `eigen`  library to define matrices and easily compute their inverse and transpose. Check out the  `eigen`library full documentation  [here](https://eigen.tuxfamily.org/dox/group__QuickRefPage.html)  and go through some of their examples. Here's a list of useful commands that you'll need while working on this quiz:
@@ -200,9 +202,9 @@ int main()
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTMxMDQ5NSwxNjM3ODMzMTE4LC0xNz
-UxNDg0NjYzLDYwODUxNDg0OCwtMTgwNDQ1NjczLC0xODg5OTE2
-NjkzLC0xMjQwMDE4NDUzLC0yMTMwNzc3OTE4LC0xNDk0NzE3NT
-EyLDIwOTE3MzUwMjcsLTIxOTk1MTgwLC0xNDIxMjgyMDcwLDcy
-ODczODUzOF19
+eyJoaXN0b3J5IjpbLTE3OTcyMDExNDcsMTYzNzgzMzExOCwtMT
+c1MTQ4NDY2Myw2MDg1MTQ4NDgsLTE4MDQ0NTY3MywtMTg4OTkx
+NjY5MywtMTI0MDAxODQ1MywtMjEzMDc3NzkxOCwtMTQ5NDcxNz
+UxMiwyMDkxNzM1MDI3LC0yMTk5NTE4MCwtMTQyMTI4MjA3MCw3
+Mjg3Mzg1MzhdfQ==
 -->
