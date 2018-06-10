@@ -39,7 +39,7 @@ $$\large x' = Fx + noise$$
 
 $$\large noise \sim N(0,Q)$$
 
-Now, what happens to the covariance? How does it change in this process? Your intuition may suggest that it would be affected by the state transition function, and also by some additional uncertainty arising from the estimation. If so, you’re correct!
+Now, what happens to the covariance, $P$? How does it change in this process? Your intuition may suggest that it would be affected by the state transition function, and also by some additional uncertainty arising from the estimation. If so, you’re correct!
 
 **Sidenote:**  While it is common to use $\Sigma$  to represent the covariance of a Gaussian distribution in mathematics, it is more common to use the letter  $P$  to represent the state covariance in localization.
 
@@ -148,7 +148,7 @@ for (int n = 0; n < sizeof(measurements) / sizeof(measurements[0]); n++) {
 // Compute x and P
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMzNzYyMDU3LC0xMjQwMDE4NDUzLC0yMT
-MwNzc3OTE4LC0xNDk0NzE3NTEyLDIwOTE3MzUwMjcsLTIxOTk1
-MTgwLC0xNDIxMjgyMDcwLDcyODczODUzOF19
+eyJoaXN0b3J5IjpbLTE4ODk5MTY2OTMsLTEyNDAwMTg0NTMsLT
+IxMzA3Nzc5MTgsLTE0OTQ3MTc1MTIsMjA5MTczNTAyNywtMjE5
+OTUxODAsLTE0MjEyODIwNzAsNzI4NzM4NTM4XX0=
 -->
