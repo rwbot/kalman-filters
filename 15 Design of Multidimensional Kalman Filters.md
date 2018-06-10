@@ -106,7 +106,7 @@ $$\large P = (I - KH)P'$$
 | Symbol 	| Meaning                       		| Formula 	|
 |--------	|---------------------------------	|---------	|
 | x      	| Prior State                   					|         	|
-| x'     	| Posterior State               				|         	|
+| x'     	| Posterior State               				| $\large x' = Fx$        	|
 | F      	| State Transition Function     		|         	|
 | P      	| Prior Covariance              			|         	|
 | P      	| Posterior Covariance          		|         	|
@@ -165,8 +165,8 @@ for (int n = 0; n < sizeof(measurements) / sizeof(measurements[0]); n++) {
 // Compute x and P
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDk5MjIzMTUsLTE4MDQ0NTY3MywtMT
-g4OTkxNjY5MywtMTI0MDAxODQ1MywtMjEzMDc3NzkxOCwtMTQ5
-NDcxNzUxMiwyMDkxNzM1MDI3LC0yMTk5NTE4MCwtMTQyMTI4Mj
-A3MCw3Mjg3Mzg1MzhdfQ==
+eyJoaXN0b3J5IjpbMjIxNDk3NzkyLC0xODA0NDU2NzMsLTE4OD
+k5MTY2OTMsLTEyNDAwMTg0NTMsLTIxMzA3Nzc5MTgsLTE0OTQ3
+MTc1MTIsMjA5MTczNTAyNywtMjE5OTUxODAsLTE0MjEyODIwNz
+AsNzI4NzM4NTM4XX0=
 -->
