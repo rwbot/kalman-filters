@@ -27,7 +27,7 @@ If we make the same assumption about the Kalman Filter executing one iteration p
 
 $$\large \begin{bmatrix} x \\ \dot{x} \end{bmatrix}' = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix} \begin{bmatrix} x \\ \dot{x} \end{bmatrix}$$
 
-The State Transition Function is denoted  FF, and the formula can be written as so,
+The State Transition Function is denoted  $F$, and the formula can be written as so,
 
 $$\large x' = Fx$$
 
@@ -146,6 +146,6 @@ for (int n = 0; n < sizeof(measurements) / sizeof(measurements[0]); n++) {
 // Compute x and P
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNTE1NzgxNywtMjE5OTUxODAsLTE0Mj
+eyJoaXN0b3J5IjpbMjA5MTczNTAyNywtMjE5OTUxODAsLTE0Mj
 EyODIwNzAsNzI4NzM4NTM4XX0=
 -->
