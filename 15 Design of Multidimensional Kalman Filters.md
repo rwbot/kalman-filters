@@ -115,7 +115,7 @@ $$\large P = (I - KH)P'$$
 | y      	| Measurement Residual          		|  $\large y = z - Hx'$       	|
 | R      	| Measurement Noise             		|         	|
 | S      	| State Prediction + Meas Noise 	| $\large S = HP'H^T + R$        	|
-| K      	| Kalman Gain                   				|         	|
+| K      	| Kalman Gain                   				| $\large P = (I - KH)P'$        	|
 
 
 The Kalman Filter can successfully recover from inaccurate initial estimates, but it is very important to estimate the noise parameters as accurately as possible - as they are used to determine which of the estimate or the measurement to believe more.
@@ -165,8 +165,8 @@ for (int n = 0; n < sizeof(measurements) / sizeof(measurements[0]); n++) {
 // Compute x and P
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA4NTE0ODQ4LC0xODA0NDU2NzMsLTE4OD
-k5MTY2OTMsLTEyNDAwMTg0NTMsLTIxMzA3Nzc5MTgsLTE0OTQ3
-MTc1MTIsMjA5MTczNTAyNywtMjE5OTUxODAsLTE0MjEyODIwNz
-AsNzI4NzM4NTM4XX0=
+eyJoaXN0b3J5IjpbLTE3NTE0ODQ2NjMsNjA4NTE0ODQ4LC0xOD
+A0NDU2NzMsLTE4ODk5MTY2OTMsLTEyNDAwMTg0NTMsLTIxMzA3
+Nzc5MTgsLTE0OTQ3MTc1MTIsMjA5MTczNTAyNywtMjE5OTUxOD
+AsLTE0MjEyODIwNzAsNzI4NzM4NTM4XX0=
 -->
