@@ -2,17 +2,17 @@
 In our one-dimensional examples the system state was represented by one variable. In n-dimensional systems the state is a vector with n state variables
 
 If we are to explore a 2-dimensional example these two state variables can be the $\large X$ and $\large Y$ position of a robot:
-$$\begin{pmatrix}
+$$\begin{bmatrix}
  x  \\
  y 
-\end{pmatrix}$$
+\end{bmatrix}$$
 
 or if we're looking for a more interesting example, it could be the position and velocity of a robot:
 
-$$\begin{pmatrix}
+$$\begin{bmatrix}
  x  \\
  \dot{x} 
-\end{pmatrix}$$
+\end{bmatrix}$$
 
 This leads right into another important matter. When working in one dimension your state has to be **observable** meaning that it had to be something that can be **measured directly**. In multidimensional States there may exist hidden state variables, ones that you cannot measure with the sensors available.
 
@@ -68,5 +68,5 @@ Then the relationship between the two dimensions narrows down the posterior for 
 
 Continuing iterating through the measurement updates and state prediction steps will update the robot's internal state to keep it aligned with where it is in the real world.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NTc4NTI0Ml19
+eyJoaXN0b3J5IjpbODcxMzExNzM0XX0=
 -->
