@@ -13,10 +13,13 @@ $$\large x' = x + \Delta t \dot{x}$$
 
 $$\large \dot{x}' = \dot{x}$$
 
-Let’s see how these two equations would look if they were re-written as a linear algebra equation. On the left, is the posterior state (denoted with the prime symbol,  $\large '\space$), and on the right are the state transition function and the prior state. This equation shows how the state changes over the time period,  $\large \Delta t$. Note that we are working with the means here; the covariance matrix will appear later.
+Let’s see how these two equations would look if they were re-written as a linear algebra equation. On the left, is the posterior state (denoted with the prime symbol,  $\large '\space$), and on the right are the state transition function and the prior state. This equation shows how the state changes over the time period,  $\large \Delta t$. 
 
 $$\large \begin{bmatrix} x \\ \dot{x} \end{bmatrix}' = \begin{bmatrix} 1 & \Delta{t} \\ 0 & 1 \end{bmatrix} \begin{bmatrix} x \\ \dot{x} \end{bmatrix}$$
+
 $$Posterior \space State = State \space Transition *Prior \space State$$
+
+### Note that we are working with the means here; the covariance matrix will appear later.
 
 If you multiply the matrices out, you have the same position update and velocity update as you had above. The new position is the prior position plus the time traveled multiplied by the velocity. The velocity is unchanged.
 
@@ -143,6 +146,6 @@ for (int n = 0; n < sizeof(measurements) / sizeof(measurements[0]); n++) {
 // Compute x and P
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU4ODA1NTI4LC0yMTk5NTE4MCwtMTQyMT
-I4MjA3MCw3Mjg3Mzg1MzhdfQ==
+eyJoaXN0b3J5IjpbMTIyNTE1NzgxNywtMjE5OTUxODAsLTE0Mj
+EyODIwNzAsNzI4NzM4NTM4XX0=
 -->
