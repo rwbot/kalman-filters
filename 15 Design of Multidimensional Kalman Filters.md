@@ -43,7 +43,7 @@ Now, what happens to the covariance? How does it change in this process? Your in
 
 **Sidenote:**  While it is common to use $\Sigma$  to represent the covariance of a Gaussian distribution in mathematics, it is more common to use the letter  $P$  to represent the state covariance in localization.
 
-To calculate the posterior covariance $P'$, the prior covariance $P$ would be multiplied by the state transition function, and  $Q$  added as an increase of uncertainty due to process noise.  $Q$  can account for a robot slowing down unexpectedly, or being drawn off course by an external influence.
+To calculate the posterior covariance $P'$, the prior covariance $P$ would be multiplied by the state transition function $F$, and  $Q$  added as an increase of uncertainty due to process noise.  $Q$  can account for a robot slowing down unexpectedly, or being drawn off course by an external influence.
 
 $$\large P' = FPF^T + Q$$
 
@@ -148,7 +148,7 @@ for (int n = 0; n < sizeof(measurements) / sizeof(measurements[0]); n++) {
 // Compute x and P
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDAwMTg0NTMsLTIxMzA3Nzc5MTgsLT
-E0OTQ3MTc1MTIsMjA5MTczNTAyNywtMjE5OTUxODAsLTE0MjEy
-ODIwNzAsNzI4NzM4NTM4XX0=
+eyJoaXN0b3J5IjpbNzMzNzYyMDU3LC0xMjQwMDE4NDUzLC0yMT
+MwNzc3OTE4LC0xNDk0NzE3NTEyLDIwOTE3MzUwMjcsLTIxOTk1
+MTgwLC0xNDIxMjgyMDcwLDcyODczODUzOF19
 -->
