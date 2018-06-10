@@ -109,7 +109,7 @@ $$\large P = (I - KH)P'$$
 | x'     	| Posterior State               				| $\large x' = Fx$        	|
 | F      	| State Transition Function     		|         	|
 | P      	| Prior Covariance              			|         	|
-| P      	| Posterior Covariance          		|         	|
+| P'      	| Posterior Covariance          		| $\large P' = FPF^T + Q$         	|
 | z      	| Observation                   				|         	|
 | H      	| Measurement Function          	|         	|
 | y      	| Measurement Residual          		|         	|
@@ -165,8 +165,8 @@ for (int n = 0; n < sizeof(measurements) / sizeof(measurements[0]); n++) {
 // Compute x and P
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIxNDk3NzkyLC0xODA0NDU2NzMsLTE4OD
-k5MTY2OTMsLTEyNDAwMTg0NTMsLTIxMzA3Nzc5MTgsLTE0OTQ3
-MTc1MTIsMjA5MTczNTAyNywtMjE5OTUxODAsLTE0MjEyODIwNz
-AsNzI4NzM4NTM4XX0=
+eyJoaXN0b3J5IjpbMTE5ODIxNTI5MiwtMTgwNDQ1NjczLC0xOD
+g5OTE2NjkzLC0xMjQwMDE4NDUzLC0yMTMwNzc3OTE4LC0xNDk0
+NzE3NTEyLDIwOTE3MzUwMjcsLTIxOTk1MTgwLC0xNDIxMjgyMD
+cwLDcyODczODUzOF19
 -->
