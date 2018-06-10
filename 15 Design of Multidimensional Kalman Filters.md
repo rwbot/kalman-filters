@@ -103,20 +103,20 @@ $$\large P = (I - KH)P'$$
 
 
 
-| Symbol 			| Meaning                       		| Formula 	|
-|--------				|---------------------------------	|---------	|
-| x      					| Prior State                   					|         	|
-| x'     					| Posterior State               				| $\large x' = Fx$        	|
-| F      					| State Transition Function     		|         	|
-| P      					| Prior Covariance              			|         	|
-| P'      					| Posterior Covariance          		| $\large P' = FPF^T + Q$         	|
-| z      					| Observation                   				|         	|
-| H      					| Measurement Function          	|         	|
-| y      					| Measurement Residual          		|  $\large y = z - Hx'$       	|
-| R      					| Measurement Noise             		|         	|
-| S      					| State Prediction + Meas Noise 	| $\large S = HP'H^T + R$        	|
-| K      					| Kalman Gain                   				| $\large K = P'H^TS^{-1}$        	|
-| $P_{new}$      	| New State Covariance Updated  with Kalman Gain| $\large P = (I - KH)P'$         	|
+| Symbol 			| Meaning                       													| Formula 	|
+|--------				|---------------------------------											|---------	|
+| x      					| Prior State                   														|         	|
+| x'     					| Posterior State               													| $\large x' = Fx$        	|
+| F      					| State Transition Function     											|         	|
+| P      					| Prior Covariance              												|         	|
+| P'      					| Posterior Covariance          											| $\large P' = FPF^T + Q$         	|
+| z      					| Observation                   													|         	|
+| H      					| Measurement Function          										|         	|
+| y      					| Measurement Residual          											|  $\large y = z - Hx'$       	|
+| R      					| Measurement Noise             											|         	|
+| S      					| State Prediction + Meas Noise 										| $\large S = HP'H^T + R$        	|
+| K      					| Kalman Gain                   													| $\large K = P'H^TS^{-1}$        	|
+| $P_{new}$      	| New State Covariance Updated  with Kalman Gain	| $\large P = (I - KH)P'$         	|
 
 
 
@@ -202,9 +202,9 @@ int main()
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTcyMDExNDcsMTYzNzgzMzExOCwtMT
-c1MTQ4NDY2Myw2MDg1MTQ4NDgsLTE4MDQ0NTY3MywtMTg4OTkx
-NjY5MywtMTI0MDAxODQ1MywtMjEzMDc3NzkxOCwtMTQ5NDcxNz
-UxMiwyMDkxNzM1MDI3LC0yMTk5NTE4MCwtMTQyMTI4MjA3MCw3
-Mjg3Mzg1MzhdfQ==
+eyJoaXN0b3J5IjpbMTE2NDg5Mzc3MywxNjM3ODMzMTE4LC0xNz
+UxNDg0NjYzLDYwODUxNDg0OCwtMTgwNDQ1NjczLC0xODg5OTE2
+NjkzLC0xMjQwMDE4NDUzLC0yMTMwNzc3OTE4LC0xNDk0NzE3NT
+EyLDIwOTE3MzUwMjcsLTIxOTk1MTgwLC0xNDIxMjgyMDcwLDcy
+ODczODUzOF19
 -->
