@@ -102,28 +102,21 @@ $$\large x = x' + Ky$$
 $$\large P = (I - KH)P'$$
 
 
-$$
-\begin{table}[]
-\centering
-\caption{My caption}
-\label{my-label}
-\begin{tabular}{|l|l|l|}
-\hline
-Symbol & Meaning                       & Formula \\ \hline
-x      & Prior State                   &         \\ \hline
-x'     & Posterior State               &         \\ \hline
-F      & State Transition Function     &         \\ \hline
-P      & Prior Covariance              &         \\ \hline
-P      & Posterior Covariance          &         \\ \hline
-z      & Observation                   &         \\ \hline
-H      & Measurement Function          &         \\ \hline
-y      & Measurement Residual          &         \\ \hline
-R      & Measurement Noise             &         \\ \hline
-S      & State Prediction + Meas Noise &         \\ \hline
-K      & Kalman Gain                   &         \\ \hline
-\end{tabular}
-\end{table}
-$$
+```markdown
+| Symbol 	| Meaning                       	| Formula 	|
+|--------	|-------------------------------	|---------	|
+| x      	| Prior State                   	|         	|
+| x'     	| Posterior State               	|         	|
+| F      	| State Transition Function     	|         	|
+| P      	| Prior Covariance              	|         	|
+| P      	| Posterior Covariance          	|         	|
+| z      	| Observation                   	|         	|
+| H      	| Measurement Function          	|         	|
+| y      	| Measurement Residual          	|         	|
+| R      	| Measurement Noise             	|         	|
+| S      	| State Prediction + Meas Noise 	|         	|
+| K      	| Kalman Gain                   	|         	|
+```
 
 The Kalman Filter can successfully recover from inaccurate initial estimates, but it is very important to estimate the noise parameters as accurately as possible - as they are used to determine which of the estimate or the measurement to believe more.
 
@@ -172,8 +165,8 @@ for (int n = 0; n < sizeof(measurements) / sizeof(measurements[0]); n++) {
 // Compute x and P
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDQ0NTY3MywtMTg4OTkxNjY5MywtMT
-I0MDAxODQ1MywtMjEzMDc3NzkxOCwtMTQ5NDcxNzUxMiwyMDkx
-NzM1MDI3LC0yMTk5NTE4MCwtMTQyMTI4MjA3MCw3Mjg3Mzg1Mz
-hdfQ==
+eyJoaXN0b3J5IjpbMTQwNDU4Nzc3NCwtMTgwNDQ1NjczLC0xOD
+g5OTE2NjkzLC0xMjQwMDE4NDUzLC0yMTMwNzc3OTE4LC0xNDk0
+NzE3NTEyLDIwOTE3MzUwMjcsLTIxOTk1MTgwLC0xNDIxMjgyMD
+cwLDcyODczODUzOF19
 -->
