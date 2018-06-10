@@ -55,9 +55,9 @@ In our example, the measurements are only of the location, therefore the measure
 
 $$\large z = \begin{bmatrix} 1 & 0 \end{bmatrix} \begin{bmatrix} x \\ \dot{x} \end{bmatrix}$$
 
-This matrix, called the *Measurement Function, is denoted  $H$.
+This matrix, called the **Measurement Function**, is denoted  $H$.
 
-For the measurement update step, there are a few formulas. First, we calculate the measurement residual,  $y$. The measurement residual is the difference between the measurement and the expected measurement, based on prior state (ie. where the measurement tells us where we are vs. where we think we are). The measurement residual will be used later on in a formula.
+For the measurement update step, there are a few formulas. First, we calculate the **measurement residual**,  $y$. The measurement residual is the difference between the measurement and the expected measurement, based on prior state (ie. where the measurement tells us where we are vs. where we think we are). The measurement residual will be used later on in a formula.
 
 $$\large y = z - Hx'$$
 
@@ -148,7 +148,7 @@ for (int n = 0; n < sizeof(measurements) / sizeof(measurements[0]); n++) {
 // Compute x and P
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzU2MzAxMDAsLTE0OTQ3MTc1MTIsMj
-A5MTczNTAyNywtMjE5OTUxODAsLTE0MjEyODIwNzAsNzI4NzM4
-NTM4XX0=
+eyJoaXN0b3J5IjpbNjMwOTg5MDQ4LC0xNDk0NzE3NTEyLDIwOT
+E3MzUwMjcsLTIxOTk1MTgwLC0xNDIxMjgyMDcwLDcyODczODUz
+OF19
 -->
