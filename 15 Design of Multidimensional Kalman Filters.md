@@ -103,19 +103,19 @@ $$\large P = (I - KH)P'$$
 
 
 
-| Symbol 	| Meaning                       	| Formula 	|
-|--------	|-------------------------------	|---------	|
-| x      	| Prior State                   				| $\large x' = Fx$        	|
-| x'     	| Posterior State               			|         	|
+| Symbol 	| Meaning                       		| Formula 	|
+|--------	|---------------------------------	|---------	|
+| x      	| Prior State                   					|         	|
+| x'     	| Posterior State               				|         	|
 | F      	| State Transition Function     		|         	|
-| P      	| Prior Covariance              	|         	|
-| P      	| Posterior Covariance          	|         	|
-| z      	| Observation                   	|         	|
+| P      	| Prior Covariance              			|         	|
+| P      	| Posterior Covariance          		|         	|
+| z      	| Observation                   				|         	|
 | H      	| Measurement Function          	|         	|
-| y      	| Measurement Residual          	|         	|
-| R      	| Measurement Noise             	|         	|
+| y      	| Measurement Residual          		|         	|
+| R      	| Measurement Noise             		|         	|
 | S      	| State Prediction + Meas Noise 	|         	|
-| K      	| Kalman Gain                   	|         	|
+| K      	| Kalman Gain                   				|         	|
 
 
 The Kalman Filter can successfully recover from inaccurate initial estimates, but it is very important to estimate the noise parameters as accurately as possible - as they are used to determine which of the estimate or the measurement to believe more.
@@ -165,7 +165,7 @@ for (int n = 0; n < sizeof(measurements) / sizeof(measurements[0]); n++) {
 // Compute x and P
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDYzMjg2MDYsLTE4MDQ0NTY3MywtMT
+eyJoaXN0b3J5IjpbLTIwMDk5MjIzMTUsLTE4MDQ0NTY3MywtMT
 g4OTkxNjY5MywtMTI0MDAxODQ1MywtMjEzMDc3NzkxOCwtMTQ5
 NDcxNzUxMiwyMDkxNzM1MDI3LC0yMTk5NTE4MCwtMTQyMTI4Mj
 A3MCw3Mjg3Mzg1MzhdfQ==
