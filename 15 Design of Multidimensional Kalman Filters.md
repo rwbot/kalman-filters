@@ -57,7 +57,7 @@ $$\large z = \begin{bmatrix} 1 & 0 \end{bmatrix} \begin{bmatrix} x \\ \dot{x} \e
 
 This matrix, called the **Measurement Function**, is denoted  $H$.
 
-For the measurement update step, there are a few formulas. First, we calculate the **measurement residual**,  $y$. The measurement residual is the difference between the measurement and the expected measurement, based on prior state **(ie. where the measurement tells us where we are vs. where we think we are)**. The measurement residual will be used later on in a formula.
+For the measurement update step, there are a few formulas. First, we calculate the **Measurement Residual**,  $y$. The measurement residual is the difference between the measurement and the expected measurement, based on prior state **(ie. where the measurement tells us where we are vs. where we think we are)**. The measurement residual will be used later on in a formula.
 
 $$\large y = z - Hx'$$
 
@@ -69,7 +69,7 @@ These equations need not be memorized, instead they can be referred to in text o
 
 ## Kalman Gain
 
-Next, we calculate the Kalman Gain, K. As you will see in the next equation, the Kalman Gain determines how much weight should be placed on the state prediction, and how much on the measurement update. It is an averaging factor that changes depending on the uncertainty of the state prediction and measurement update.
+Next, we calculate the Kalman Gain, $K$. As you will see in the next equation, the Kalman Gain determines how much weight should be placed on the state prediction, and how much on the measurement update. It is an averaging factor that changes depending on the uncertainty of the state prediction and measurement update.
 
 $$\large K = P'H^TS^{-1}$$
 
@@ -77,7 +77,7 @@ $$\large x = x' + Ky$$
 
 These equations may look complicated and intimidating, but they do nothing more than calculate an average factor. Let’s work through a quick example to gain a better understanding of this.
 
-[![](https://preview.ibb.co/cGOBtT/capture_screen_2.png)](https://youtu.be/K-FobmdRMtI)
+[s![](https://preview.ibb.co/cGOBtT/capture_screen_2.png)](https://youtu.be/K-FobmdRMtI)
 
 The last step in the Kalman Filter is to update the new state’s covariance using the Kalman Gain.
 
@@ -148,7 +148,7 @@ for (int n = 0; n < sizeof(measurements) / sizeof(measurements[0]); n++) {
 // Compute x and P
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzQ1NjY3MzYsLTE0OTQ3MTc1MTIsMj
+eyJoaXN0b3J5IjpbLTE0MzM0Mzk1NjUsLTE0OTQ3MTc1MTIsMj
 A5MTczNTAyNywtMjE5OTUxODAsLTE0MjEyODIwNzAsNzI4NzM4
 NTM4XX0=
 -->
