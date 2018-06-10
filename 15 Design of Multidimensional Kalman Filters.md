@@ -103,20 +103,20 @@ $$\large P = (I - KH)P'$$
 
 
 
-| Symbol 	| Meaning                       		| Formula 	|
-|--------	|---------------------------------	|---------	|
-| x      	| Prior State                   					|         	|
-| x'     	| Posterior State               				| $\large x' = Fx$        	|
-| F      	| State Transition Function     		|         	|
-| P      	| Prior Covariance              			|         	|
-| P'      	| Posterior Covariance          		| $\large P' = FPF^T + Q$         	|
-| z      	| Observation                   				|         	|
-| H      	| Measurement Function          	|         	|
-| y      	| Measurement Residual          		|  $\large y = z - Hx'$       	|
-| R      	| Measurement Noise             		|         	|
-| S      	| State Prediction + Meas Noise 	| $\large S = HP'H^T + R$        	|
-| K      	| Kalman Gain                   				| $\large K = P'H^TS^{-1}$        	|
-| Pnew      	| Posterior Covariance          		| $\large P' = FPF^T + Q$         	|
+| Symbol 			| Meaning                       		| Formula 	|
+|--------				|---------------------------------	|---------	|
+| x      					| Prior State                   					|         	|
+| x'     					| Posterior State               				| $\large x' = Fx$        	|
+| F      					| State Transition Function     		|         	|
+| P      					| Prior Covariance              			|         	|
+| P'      					| Posterior Covariance          		| $\large P' = FPF^T + Q$         	|
+| z      					| Observation                   				|         	|
+| H      					| Measurement Function          	|         	|
+| y      					| Measurement Residual          		|  $\large y = z - Hx'$       	|
+| R      					| Measurement Noise             		|         	|
+| S      					| State Prediction + Meas Noise 	| $\large S = HP'H^T + R$        	|
+| K      					| Kalman Gain                   				| $\large K = P'H^TS^{-1}$        	|
+| $P_{new}$      	| Posterior Covariance          		| $\large P' = FPF^T + Q$         	|
 
 The Kalman Filter can successfully recover from inaccurate initial estimates, but it is very important to estimate the noise parameters as accurately as possible - as they are used to determine which of the estimate or the measurement to believe more.
 
@@ -200,9 +200,9 @@ int main()
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUwNjI4MTA2LDE2Mzc4MzMxMTgsLTE3NT
-E0ODQ2NjMsNjA4NTE0ODQ4LC0xODA0NDU2NzMsLTE4ODk5MTY2
-OTMsLTEyNDAwMTg0NTMsLTIxMzA3Nzc5MTgsLTE0OTQ3MTc1MT
-IsMjA5MTczNTAyNywtMjE5OTUxODAsLTE0MjEyODIwNzAsNzI4
-NzM4NTM4XX0=
+eyJoaXN0b3J5IjpbNTQ3ODM0NSwxNjM3ODMzMTE4LC0xNzUxND
+g0NjYzLDYwODUxNDg0OCwtMTgwNDQ1NjczLC0xODg5OTE2Njkz
+LC0xMjQwMDE4NDUzLC0yMTMwNzc3OTE4LC0xNDk0NzE3NTEyLD
+IwOTE3MzUwMjcsLTIxOTk1MTgwLC0xNDIxMjgyMDcwLDcyODcz
+ODUzOF19
 -->
