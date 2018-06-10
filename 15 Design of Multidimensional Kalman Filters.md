@@ -15,19 +15,8 @@ $$\large \dot{x}' = \dot{x}$$
 
 Let’s see how these two equations would look if they were re-written as a linear algebra equation. On the left, is the posterior state (denoted with the prime symbol,  $\large '\space$), and on the right are the state transition function and the prior state. This equation shows how the state changes over the time period,  $\large \Delta t$. Note that we are working with the means here; the covariance matrix will appear later.
 
-$$\large 
-\begin{bmatrix} 
-x \\ 
-\dot{x} 
-\end{bmatrix}'  = 
-\begin{bmatrix} 
-1 & \Delta{t} \\ 
-0 & 1 
-\end{bmatrix} 
-\begin{bmatrix} 
-x \\ \dot{x} 
-\end{bmatrix}$$
-
+$$\large \begin{bmatrix} x \\ \dot{x} \end{bmatrix}' = \begin{bmatrix} 1 & \Delta{t} \\ 0 & 1 \end{bmatrix} \begin{bmatrix} x \\ \dot{x} \end{bmatrix}$$
+$$Posterior $$
 If you multiply the matrices out, you have the same position update and velocity update as you had above. The new position is the prior position plus the time traveled multiplied by the velocity. The velocity is unchanged.
 
 If we make the same assumption about the Kalman Filter executing one iteration per second as we did before, the matrix can be simplified to the one seen below.
@@ -153,6 +142,6 @@ for (int n = 0; n < sizeof(measurements) / sizeof(measurements[0]); n++) {
 // Compute x and P
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MDYyMTAzNiwtMTQyMTI4MjA3MCw3Mj
+eyJoaXN0b3J5IjpbMjAxODQ4OTE2MSwtMTQyMTI4MjA3MCw3Mj
 g3Mzg1MzhdfQ==
 -->
