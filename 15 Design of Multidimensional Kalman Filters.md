@@ -19,6 +19,8 @@ $$\large \begin{bmatrix} x \\ \dot{x} \end{bmatrix}' = \begin{bmatrix} 1 & \Delt
 
 $$Posterior \space State = State \space Transition *Prior \space State$$
 
+$$\large x' = Fx$$
+
 ### Note that we are working with the means here; the covariance matrix will appear later.
 
 If you multiply the matrices out, you have the same position update and velocity update as you had above. The new position is the prior position plus the time traveled multiplied by the velocity. The velocity is unchanged.
@@ -146,6 +148,6 @@ for (int n = 0; n < sizeof(measurements) / sizeof(measurements[0]); n++) {
 // Compute x and P
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MTczNTAyNywtMjE5OTUxODAsLTE0Mj
-EyODIwNzAsNzI4NzM4NTM4XX0=
+eyJoaXN0b3J5IjpbLTE0OTQ3MTc1MTIsMjA5MTczNTAyNywtMj
+E5OTUxODAsLTE0MjEyODIwNzAsNzI4NzM4NTM4XX0=
 -->
