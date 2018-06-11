@@ -9,25 +9,7 @@
 </head>
 
 <body class="stackedit">
-  <div class="stackedit__left">
-    <div class="stackedit__toc">
-      
-<ul>
-<li><a href="#design-of-multi-dimensional-kalman-filters">Design of Multi-Dimensional Kalman Filters</a>
-<ul>
-<li><a href="#state-transition">State Transition</a></li>
-<li><a href="#measurement-update">Measurement Update</a></li>
-<li><a href="#kalman-gain">Kalman Gain</a></li>
-<li><a href="#kalman-filter-equations">Kalman Filter Equations</a></li>
-</ul>
-</li>
-</ul>
-
-    </div>
-  </div>
-  <div class="stackedit__right">
-    <div class="stackedit__html">
-      <h1 id="design-of-multi-dimensional-kalman-filters">Design of Multi-Dimensional Kalman Filters</h1>
+  <div class="stackedit__html"><h1 id="design-of-multi-dimensional-kalman-filters">Design of Multi-Dimensional Kalman Filters</h1>
 <p><a href="https://www.youtube.com/watch?v=9Xb5WavDqKE"><img src="https://preview.ibb.co/f60S08/capture_screen_1.png" alt=""></a></p>
 <p>To implement a two dimensional Kalman Filter, you will need to apply several linear algebra equations. To begin with, let’s convert the state prediction into linear algebra form. This is helpful because linear algebra allows us to work easily with multi-dimensional problems.</p>
 <h2 id="state-transition">State Transition</h2>
@@ -238,9 +220,7 @@ int main()
     return 0;
 }
 </code></pre>
-
-    </div>
-  </div>
+</div>
 </body>
 
 </html>
