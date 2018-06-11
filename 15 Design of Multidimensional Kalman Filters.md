@@ -117,7 +117,7 @@ $$\large P = (I - KH)P'$$
 | S      					| State Prediction + Meas Noise 										| $\large S = HP'H^T + R$        	|
 | K      					| Kalman Gain                   													| $\large K = P'H^TS^{-1}$        	|
 | $P_{new}$      	| New State Covariance Updated  with Kalman Gain	| $\large P = (I - KH)P'$         	|
-
+| $x_{new}$      	| New State Covariance Updated  with Kalman Gain	| $\large P = (I - KH)P'$         	|
 
 
 The Kalman Filter can successfully recover from inaccurate initial estimates, but it is very important to estimate the noise parameters as accurately as possible - as they are used to determine which of the estimate or the measurement to believe more.
@@ -202,9 +202,9 @@ int main()
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NDg5Mzc3MywxNjM3ODMzMTE4LC0xNz
-UxNDg0NjYzLDYwODUxNDg0OCwtMTgwNDQ1NjczLC0xODg5OTE2
-NjkzLC0xMjQwMDE4NDUzLC0yMTMwNzc3OTE4LC0xNDk0NzE3NT
-EyLDIwOTE3MzUwMjcsLTIxOTk1MTgwLC0xNDIxMjgyMDcwLDcy
-ODczODUzOF19
+eyJoaXN0b3J5IjpbNTE2NDY2OTg3LDExNjQ4OTM3NzMsMTYzNz
+gzMzExOCwtMTc1MTQ4NDY2Myw2MDg1MTQ4NDgsLTE4MDQ0NTY3
+MywtMTg4OTkxNjY5MywtMTI0MDAxODQ1MywtMjEzMDc3NzkxOC
+wtMTQ5NDcxNzUxMiwyMDkxNzM1MDI3LC0yMTk5NTE4MCwtMTQy
+MTI4MjA3MCw3Mjg3Mzg1MzhdfQ==
 -->
