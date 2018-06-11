@@ -1,4 +1,6 @@
 
+<script src="//tex.s2cms.ru/latex.js"></script>
+
 # Design of Multi-Dimensional Kalman Filters
 
 [![](https://preview.ibb.co/f60S08/capture_screen_1.png)](https://www.youtube.com/watch?v=9Xb5WavDqKE)
@@ -205,5 +207,5 @@ int main()
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NDg4ODYxNl19
+eyJoaXN0b3J5IjpbNjg3NDY4MTAyLC0yOTQ4ODg2MTZdfQ==
 -->
