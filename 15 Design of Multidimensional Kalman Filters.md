@@ -381,8 +381,8 @@ int main()
 
     return 0;
 }
-</code></pre>```
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyODY1NzkwM119
+eyJoaXN0b3J5IjpbMTQyMTg1OTI3NV19
 -->
