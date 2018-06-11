@@ -116,6 +116,7 @@ $$\large P = (I - KH)P'$$
 | R      					| Measurement Noise             											|         	|
 | S      					| State Prediction + Meas Noise 										| $\large S = HP'H^T + R$        	|
 | K      					| Kalman Gain                   													| $\large K = P'H^TS^{-1}$        	|
+|  							| Not sure about the ones below										|         	|
 | $P_{new}$ ?? 	| New State Covariance Updated  with Kalman Gain	| $\large P = (I - KH)P'$         	|
 | $x_{new}$ ?? 	| New State Updated  with Kalman Gain ???					| $\large x = x' + Ky$         	|
 
@@ -202,9 +203,9 @@ int main()
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODMwODI4MzYsMTE2NDg5Mzc3MywxNj
-M3ODMzMTE4LC0xNzUxNDg0NjYzLDYwODUxNDg0OCwtMTgwNDQ1
-NjczLC0xODg5OTE2NjkzLC0xMjQwMDE4NDUzLC0yMTMwNzc3OT
-E4LC0xNDk0NzE3NTEyLDIwOTE3MzUwMjcsLTIxOTk1MTgwLC0x
-NDIxMjgyMDcwLDcyODczODUzOF19
+eyJoaXN0b3J5IjpbLTEyMjczNTI5MzYsLTE0ODMwODI4MzYsMT
+E2NDg5Mzc3MywxNjM3ODMzMTE4LC0xNzUxNDg0NjYzLDYwODUx
+NDg0OCwtMTgwNDQ1NjczLC0xODg5OTE2NjkzLC0xMjQwMDE4ND
+UzLC0yMTMwNzc3OTE4LC0xNDk0NzE3NTEyLDIwOTE3MzUwMjcs
+LTIxOTk1MTgwLC0xNDIxMjgyMDcwLDcyODczODUzOF19
 -->
