@@ -1,5 +1,3 @@
-
-  
 <script src="//tex.s2cms.ru/latex.js"></script>
 
 # Design of Multi-Dimensional Kalman Filters
@@ -211,5 +209,6 @@ int main()
 eyJoaXN0b3J5IjpbNjg3NDY4MTAyXX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzIwMDIwNjhdfQ==
+eyJoaXN0b3J5IjpbLTE5NjUyMDEyNjQsLTEyNzIwMDIwNjhdfQ
+==
 -->
