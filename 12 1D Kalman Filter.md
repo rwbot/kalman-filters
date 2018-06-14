@@ -4,7 +4,7 @@ In the programming quiz below, write the code that will iteratively go through t
 
 [Video Lesson](https://www.youtube.com/watch?v=1nHSG4U_v2g)
 
-```
+```c++
 #include <iostream>
 #include <math.h>
 #include <tuple>
@@ -54,5 +54,5 @@ int main()
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NzU4OTA1N119
+eyJoaXN0b3J5IjpbOTg0MzY2MDQ4LC01Nzc1ODkwNTddfQ==
 -->
